@@ -1,0 +1,16 @@
+[
+    {
+        "username": "admin",
+        "password": "123456",
+        "name": "John Smith",
+        "token": "8aajnUJiajfbJA0LkmnbuUQXcAazfOp1",
+        "role": 1
+    },
+    {
+        "username": "guest",
+        "password": "123456",
+        "name": "Steven Morrissey",
+        "token": "d1skjdalksjfi43y98QqYUkjaIi97ugJ",
+        "role": 2
+    }
+]

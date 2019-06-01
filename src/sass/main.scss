@@ -1,0 +1,181 @@
+$white: #fafafa;
+$light: #f4f4f4;
+$grey: #e5e5e5;
+$dark: #d5d5d5;
+$red: #d32f2f;
+$progress-size: 50px;
+$progress-font: 12px;
+
+.container {
+    height: 100% !important;
+    &.center {
+        margin: 0 auto !important;
+    }
+}
+
+.content-box {
+    //padding: 15px 5px 15px !important;
+    box-sizing: border-box;
+    margin: 15px;
+    &.center {
+        margin: 0 auto !important;
+    }
+}
+
+.full-vh {
+    height: 100vh !important;
+}
+
+.pad-top {
+    padding-top: 10px;
+}
+
+.pad-bottom {
+    padding-bottom: 10px;
+}
+
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+.m-unset {
+    margin: unset !important;
+}
+
+.mt-unset {
+    margin-top: unset !important;
+}
+
+.mb-unset {
+    margin-bottom: unset !important;
+}
+
+.m-default {
+    margin: 15px !important;
+}
+
+.max-md {
+    max-width: 800px;
+}
+
+.min-sm {
+    max-width: 320px;
+}
+
+.login-thumbnail {
+    font-size: 72px !important;
+    margin-bottom: 10px;
+    opacity: .4;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    display: block !important;
+    &:not(.form-control.m-unset) {
+        margin: 0 10px !important;
+    }
+    &.full-width {
+        div {
+            width: 100%;
+        }
+    }
+}
+
+.form-button {
+    display: block !important;
+    margin: 10px 10px 0 !important;
+    width: calc(100% - 20px) !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+.linear-progress {
+    display: none;
+    margin: 15px 10px !important;
+    &.active {
+        display: block;
+    }
+}
+
+.error-box {
+    color: $red !important;
+    margin: 10px 10px 0 !important;
+    cursor: pointer;
+    width: calc(100% - 20px);
+    &.sm {
+        max-width: 194px;
+    }
+    &.md {
+        width: 50%;
+    }
+    &.lg {
+        width: 100%;
+    }
+}
+
+.icon {
+    font-size: 14px !important;
+    margin: 0 5px -2px 0 !important;
+}
+
+.voteStatus {
+    clear: both;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    &:hover {
+        cursor: pointer;
+        background: $light;
+        .circle {
+            &.circle-bg {
+                svg {
+                    circle {
+                        color: $dark;
+                    }
+                }
+            }
+        }
+    }
+    &.label {
+        margin: 0 !important;
+        float: left;
+    }
+    .circularProgress {
+        float: right !important;
+        clear: unset !important;
+    }
+}
+
+.circularProgress {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    clear: both;
+    .tag {
+        height: $progress-size;
+        width: $progress-size;
+        line-height: $progress-size;
+        float: right;
+        text-align: center;
+        font-size: $progress-font;
+    }
+    .circle {
+        height: $progress-size !important;
+        width: $progress-size !important;
+        margin-right: -$progress-size;
+        &.circle-bg {
+            svg {
+                circle {
+                    color: $grey;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: #eeeeee;
+}
+
+#root {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    min-height: 380px !important;
+}
